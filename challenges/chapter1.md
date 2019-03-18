@@ -35,25 +35,25 @@ Consider observations stored in `data` and assume that this variable has a norma
 ```{python}
 mean = np.mean(data)
 std = np.std(data)
-samples = {{sample}}(mean, std)
-print(np.mean(samples), np.std(samples))
+samples = {{fun1}}(mean, std)
+(np.mean(samples), np.std(samples))
 ```
 
 `@pre_challenge_code`
 ```{python}
 import numpy as np
-data = list(range(10))
+data = list(range(100))
 ```
 
 `@variables`
 ```yaml
-sample:
+fun1:
 - 'np.random.normal'
 ```
 
 `@distractors`
 ```yaml
-sample:
+fun1:
 - 'np.normal'
 - 'np.random.gaussian'
 ```
