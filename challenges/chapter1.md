@@ -127,7 +127,6 @@ l2 = {{l2}}
 `@pre_challenge_code`
 ```{python}
 import dccpu.generators as g
-import numpy as np
 ```
 
 `@variables`
