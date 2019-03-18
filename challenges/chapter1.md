@@ -29,23 +29,32 @@ key: 2412b0e696
 ```
 
 `@context`
-Consider observations stored in `data` and assume that this variable has a normal distribution. What are the steps needed to create samples withdrawn from the normal theoretical distribution with optimal parameters? 
+Consider observations stored in `data` and assume that this variable has a normal distribution. What are the steps needed to create samples withdrawn from the normal theoretical distribution with optimal parameters? The package `numpy` has been imported as `np`.
+
+`@code1`
+```{python}
+mean = np.mean(data)
+std = np.std(data)
+samples = {{sample}}
+```
 
 `@pre_challenge_code`
 ```{python}
-
+import numpy as np
+data = list(range(100))
 ```
 
 `@variables`
 ```yaml
-data:
-- 'data'
-
+sample:
+- 'np.random.normal(mean, std)'
 ```
 
 `@distractors`
 ```yaml
-
+sample:
+- 'np.normal(mean, std)'
+- 'np.random.gaussian(mean, std)'
 ```
 
 ---
