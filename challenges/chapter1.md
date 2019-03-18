@@ -11,7 +11,7 @@ key: 115qFYuQ4pPlifqZze0QkDORLwVufanGIfC
 ```
 
 `@assignment1`
-Which command explicitly imports the `pyplot` subpackage from `matplotlib`?
+Choose the right answer about **Optimal Parameters**.
 
 `@assignment2`
 Assuming `matplotlib.pyplot` is imported as `plt`, which command displays the current figure?
@@ -20,11 +20,10 @@ Assuming `matplotlib.pyplot` is imported as `plt`, which command displays the cu
 Assuming `matplotlib.pyplot` is imported as `plt`, which command clears the current figure?
 
 `@options1`
-- `import matplotlib as pyplot`
-- `import pyplot from matplotlib`
-- [`import matplotlib.pyplot as plt`]
-- `from pyplot import plt`
-- `import pyplot as plt`
+- They are calculated from the observed data.
+- They represent parameters that best approximates the model the actual data.
+- Their relevance depends if the selected model is appropriate for the observed data.
+- All the alternatives.
 
 `@options2`
 - `matplotlib.pyplot.show()`
@@ -118,4 +117,13 @@ op:
 op:
 - '-'
 - '*'
+```
+
+---
+
+## Insert challenge title here
+
+```yaml
+type: MultipleChoiceChallenge
+key: e72dd9ca1d
 ```
