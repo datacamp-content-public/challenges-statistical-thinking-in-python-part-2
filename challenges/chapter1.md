@@ -21,24 +21,6 @@ Choose the right answer about **Optimal Parameters**.
 
 ---
 
-## [MC] Choose the right answer
-
-```yaml
-type: MultipleChoiceChallenge
-key: 115qFYuQ4pPlifqZze0QkDORLwVufanGIfC
-```
-
-`@assignment1`
-Choose the right answer about **Optimal Parameters**.
-
-`@options1`
-- They are calculated from the observed data.
-- They represent parameters that best approximates the model the actual data.
-- Their relevance depends if the selected model is appropriate for the observed data.
-- All the alternatives.
-
----
-
 ## [OC] popping lists
 
 ```yaml
