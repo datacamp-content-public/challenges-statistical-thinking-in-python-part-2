@@ -34,10 +34,10 @@ Consider observations stored in `data` and assume that this variable has a norma
 
 `@code1`
 ```{python}
-mean = np.mean(data)
-std = np.std(data)
-samples = {{fun1}}(mean, std, size=10000)
-(np.mean(samples) == np.mean(data))
+{{mean}}
+{{std}}
+{{samples}}
+(len(samples))
 ```
 
 `@pre_challenge_code`
@@ -48,15 +48,22 @@ data = list(range(100))
 
 `@variables`
 ```yaml
-fun1:
-- 'np.random.normal'
+mean:
+- 'mean = np.mean(data)'
+std:
+- 'std = np.std(data)'
+samples:
+- 'samples = np.random.normal(mean, std, size=10000)'
 ```
 
 `@distractors`
 ```yaml
-fun1:
-- 'np.normal'
-- 'np.random.gaussian'
+mean:
+- 'mean = np.avg(data)'
+std:
+- 'std = np.standard(data)'
+samples:
+- 'samples = np.normal(mean, std, size=10000)'
 ```
 
 ---
@@ -120,6 +127,7 @@ l2 = {{l2}}
 `@pre_challenge_code`
 ```{python}
 import dccpu.generators as g
+import numpy as np
 ```
 
 `@variables`
@@ -128,7 +136,7 @@ l1:
 - '!expr g.int_vector(size=3)'
 l2:
 - '!expr g.int_vector(size=3)'
-op:
+:
 - '+'
 ```
 
