@@ -22,6 +22,45 @@ Choose the right answer about **Optimal Parameters**.
 
 ---
 
+## Insert challenge title here
+
+```yaml
+type: BlanksChallenge
+key: f23838a536
+```
+
+`@context`
+
+
+`@code1`
+```{python}
+data = {{var1}}
+print({{func1}}(data))
+```
+
+`@pre_challenge_code`
+```{python}
+import dccpu.generators as g
+```
+
+`@variables`
+```yaml
+var1:
+- '!expr g.int_vector(lo=-2, hi=2, sort=True, size=4)'
+func1:
+- 'np.mean'
+```
+
+`@distractors`
+```yaml
+func1:
+- 'np.std'
+- 'np.max'
+- 'np.min'
+```
+
+---
+
 ## [BC] Creating theoretical distributions
 
 ```yaml
@@ -30,10 +69,12 @@ key: 2412b0e696
 ```
 
 `@context`
-Consider observations stored in `data` and assume that this variable has a normal distribution. What are the steps needed to create samples withdrawn from the normal theoretical distribution with optimal parameters? The package `numpy` has been imported as `np`.
+Consider observations stored in `data` and assume that this variable has a normal distribution. The package `numpy` has been imported as `np`.
 
 `@code1`
 ```{python}
+import numpy as np
+data = [1, 5, 1, 2, 1]
 {{mean}}
 {{std}}
 {{samples}}
@@ -42,16 +83,15 @@ Consider observations stored in `data` and assume that this variable has a norma
 
 `@pre_challenge_code`
 ```{python}
-import numpy as np
-data = list(range(100))
+
 ```
 
 `@variables`
 ```yaml
 mean:
-- 'mean = np.mean(data)'
+- 'np.mean(data)'
 std:
-- 'std = np.std(data)'
+- 'np.std(data)'
 samples:
 - 'samples = np.random.normal(mean, std, size=10000)'
 ```
@@ -59,7 +99,7 @@ samples:
 `@distractors`
 ```yaml
 mean:
-- 'mean = np.avg(data)'
+- 'np.avg(data)'
 std:
 - 'std = np.standard(data)'
 samples:
