@@ -126,4 +126,4 @@ Choose the right answer about **Optimal Parameters**.
 - They are calculated from the observed data.
 - They represent parameters that best approximates the model the actual data.
 - Their relevance depends if the selected model is appropriate for the observed data.
-- All the alternatives.
+- [All the alternatives.]
