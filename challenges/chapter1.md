@@ -1,6 +1,7 @@
 ---
-title: example_python_challenges
+title: 'Chapter 1: Parameter estimation by optimization'
 output: html_document
+description: ""
 ---
 
 ## [MC] Choose the right answer
@@ -35,8 +36,8 @@ Consider observations stored in `data` and assume that this variable has a norma
 ```{python}
 mean = np.mean(data)
 std = np.std(data)
-samples = {{fun1}}(mean, std)
-(np.mean(samples), np.std(samples))
+samples = {{fun1}}(mean, std, size=10000)
+(np.mean(samples) == np.mean(data))
 ```
 
 `@pre_challenge_code`
@@ -113,7 +114,7 @@ key: 8a565a9166
 ```{python}
 l1 = {{l1}}
 l2 = {{l2}}
-print(l1 {{_op}} l2)
+(l1 {{_op}} l2)
 ```
 
 `@pre_challenge_code`
@@ -136,13 +137,4 @@ op:
 op:
 - '-'
 - '*'
-```
-
----
-
-## Insert challenge title here
-
-```yaml
-type: MultipleChoiceChallenge
-key: e72dd9ca1d
 ```
