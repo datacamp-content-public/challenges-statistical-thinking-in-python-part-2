@@ -4,7 +4,7 @@ output: html_document
 description: ""
 ---
 
-## [MC] Choose the right answer
+## [MC] Optimal Parameters
 
 ```yaml
 type: MultipleChoiceChallenge
@@ -22,7 +22,7 @@ Choose the right answer about **Optimal Parameters**.
 
 ---
 
-## Insert challenge title here
+## [BC] Applying mean in the observed data
 
 ```yaml
 type: BlanksChallenge
@@ -30,7 +30,7 @@ key: f23838a536
 ```
 
 `@context`
-
+Consider observations stored in `data`.
 
 `@code1`
 ```{python}
@@ -69,7 +69,7 @@ key: 2412b0e696
 ```
 
 `@context`
-Consider observations stored in `data` and assume that this variable has a normal distribution. The package `numpy` has been imported as `np`.
+Consider observations stored in `data`.
 
 `@code1`
 ```{python}
@@ -83,7 +83,7 @@ data = [1, 5, 1, 2, 1]
 
 `@pre_challenge_code`
 ```{python}
-
+data = list(range(100))
 ```
 
 `@variables`
