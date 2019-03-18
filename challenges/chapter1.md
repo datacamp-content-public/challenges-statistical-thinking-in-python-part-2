@@ -13,31 +13,11 @@ key: 115qFYuQ4pPlifqZze0QkDORLwVufanGIfC
 `@assignment1`
 Choose the right answer about **Optimal Parameters**.
 
-`@assignment2`
-Assuming `matplotlib.pyplot` is imported as `plt`, which command displays the current figure?
-
-`@assignment3`
-Assuming `matplotlib.pyplot` is imported as `plt`, which command clears the current figure?
-
 `@options1`
 - They are calculated from the observed data.
 - They represent parameters that best approximates the model the actual data.
 - Their relevance depends if the selected model is appropriate for the observed data.
 - All the alternatives.
-
-`@options2`
-- `matplotlib.pyplot.show()`
-- `matplotlib.show()`
-- `pyplot.show()`
-- `plt.show`
-- [`plt.show()`]
-
-`@options3`
-- `matplotlib.pyplot.clear()`
-- `plt.clear()`
-- `plt.clf`
-- `plt.clear`
-- [`plt.clf()`]
 
 ---
 
