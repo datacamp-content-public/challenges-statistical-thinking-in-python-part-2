@@ -21,6 +21,35 @@ Choose the right answer about **Optimal Parameters**.
 
 ---
 
+## [BC] Creating theoretical distributions
+
+```yaml
+type: BlanksChallenge
+key: 2412b0e696
+```
+
+`@context`
+Consider observations stored in `data` and assume that this variable has a normal distribution. What are the steps needed to create samples withdrawn from the normal theoretical distribution with optimal parameters? 
+
+`@pre_challenge_code`
+```{python}
+
+```
+
+`@variables`
+```yaml
+data:
+- 'data'
+
+```
+
+`@distractors`
+```yaml
+
+```
+
+---
+
 ## [OC] popping lists
 
 ```yaml
@@ -29,7 +58,7 @@ key: 6258197972
 ```
 
 `@context`
-
+Consider observations stored in `data`, assuming that this varaible has an normal distribution
 
 `@code1`
 ```{python}
