@@ -121,7 +121,7 @@ key: 8a565a9166
 ```{python}
 l1 = {{l1}}
 l2 = {{l2}}
-(l1 {{_op}} l2)
+print(l1 {{_op}} l2)
 ```
 
 `@pre_challenge_code`
